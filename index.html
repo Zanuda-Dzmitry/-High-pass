@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__left">
+					<svg><use xlink:href="images/sprite.svg#Logo"></use></svg>
+				</div>
+				<nav class="header__center">
+					<button id="burgerBtnOpen" class="burger-btn-open">
+						<svg style="width: 20px; height: 18px">
+							<use xlink:href="images/sprite.svg#burger"></use>
+						</svg>
+					</button>
+					<button id="burgerBtnClose" class="burger-btn-close">
+						<svg style="width: 18px; height: 18px">
+							<use xlink:href="images/sprite.svg#х"></use>
+						</svg>
+					</button>
+					<a class="header__center-link" href="#"
+						>+7&nbsp;495 424-23-532
+						<svg style="width: 22px; height: 22px">
+							<use xlink:href="images/sprite.svg#mdi_call"></use></svg
+					></a>
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#" class="header__link">О&nbsp;студии</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Наши проекты</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Услуги</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Мастер-классы</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__right">
+					<div class="header__right-search">
+						<input
+							class="input-search"
+							type="text"
+							placeholder="Что будем иcкать?"
+						/>
+						<button id="btnSearchClose" class="btn-search">
+							<svg><use xlink:href="images/sprite.svg#х"></use></svg>
+						</button>
+					</div>
+					<button id="btnSearchOpen" class="header__right-btn">
+						<svg><use xlink:href="images/sprite.svg#search"></use></svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__container container">
+					<div class="hero__left">
+						<picture
+							><source
+								media="(max-width:767px)"
+								srcset="images/hero-320-1.png" />
+							<source
+								media="(max-width:1023px)"
+								srcset="images/hero-768-1.png" />
+							<source
+								media="(max-width:1400px)"
+								srcset="images/hero-1024-1.png" />
+							<img
+								class="hero__item-img"
+								src="images/hero-1920-1.png"
+								alt="Picture" /></picture
+						><span class="hero__item-span">#мастеркласс</span>
+						<div class="hero__item-content">
+							<span class="hero__item-subtitle"
+								>Мастер-класс от&nbsp;Игоря Робова</span
+							>
+							<h1 class="hero__item-title">
+								Неоновый фотосет 2.0 7&nbsp;июля 20:00
+							</h1>
+							<a href="#" class="hero__item-link">Узнать больше</a>
+						</div>
+					</div>
+					<div class="hero__right">
+						<ul class="hero__list">
+							<li class="hero__item hero__item-1">
+								<h2 class="hero__title title">
+									Работы участников предыдущего мастер-класса
+								</h2>
+							</li>
+							<li class="hero__item hero__item-2">
+								<picture
+									><source
+										media="(max-width:767px)"
+										srcset="images/hero-320-2.png" />
+									<source
+										media="(max-width:1023px)"
+										srcset="images/hero-768-2.png" />
+									<source
+										media="(max-width:1400px)"
+										srcset="images/hero-1024-2.png" />
+									<img
+										class="hero__item-img"
+										src="images/hero-1920-2.png"
+										alt="Picture"
+								/></picture>
+							</li>
+							<li class="hero__item hero__item-3">
+								<picture
+									><source
+										media="(max-width:767px)"
+										srcset="images/hero-320-3.png" />
+									<source
+										media="(max-width:1023px)"
+										srcset="images/hero-768-3.png" />
+									<source
+										media="(max-width:1400px)"
+										srcset="images/hero-1024-3.png" />
+									<img
+										class="hero__item-img"
+										src="images/hero-1920-3.png"
+										alt="Picture"
+								/></picture>
+							</li>
+							<li class="hero__item hero__item-4">
+								<picture
+									><source
+										media="(max-width:767px)"
+										srcset="images/hero-320-4.png" />
+									<source
+										media="(max-width:1023px)"
+										srcset="images/hero-768-4.png" />
+									<source
+										media="(max-width:1400px)"
+										srcset="images/hero-1024-4.png" />
+									<img
+										class="hero__item-img"
+										src="images/hero-1920-4.png"
+										alt="Picture"
+								/></picture>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container container">
+					<h2 class="about__title">О&nbsp;студии</h2>
+					<div class="about__grid">
+						<div class="about__left">
+							<p class="about__left-text">
+								В&nbsp;рамках спецификации современных стандартов, интерактивные
+								прототипы, инициированные исключительно синтетически, ограничены
+								исключительно образом мышления. Предварительные выводы
+								неутешительны: высокотехнологичная концепция общественного
+								уклада требует от&nbsp;нас анализа соответствующих условий
+								активизации! Следует отметить, что семантический разбор внешних
+								противодействий фиксирует необходимость распределения внутренних
+								резервов и&nbsp;ресурсов. Безусловно, граница обучения кадров
+								предоставляет широкие возможности для первоочередных требований.
+								Повседневная практика показывает, что глубокий уровень
+								погружения предполагает независимые способы реализации новых
+								принципов формирования материально-технической и&nbsp;кадровой
+								базы. Приятно, граждане, наблюдать, как явные признаки
+								институционализации являются только методом политического
+								участия и&nbsp;нарушающими общечеловеческие нормы этики.
+							</p>
+						</div>
+						<div class="about__right">
+							<picture
+								><source
+									media="(max-width:767px)"
+									srcset="images/about-320.png" />
+								<source
+									media="(max-width:1023px)"
+									srcset="images/about-768.png" />
+								<source
+									media="(max-width:1400px)"
+									srcset="images/about-1024.png" />
+								<img
+									class="about__right-img"
+									src="images/about-1920.png"
+									alt="Picture"
+							/></picture>
+							<h2 class="about__right-title">Подписаться на&nbsp;рассылку</h2>
+							<form class="about__right-form">
+								<input
+									class="about__right-form-input"
+									type="text"
+									placeholder="Email"
+								/>
+								<button class="about__right-form-btn">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="projects">
+				<div class="projects__container container">
+					<h2 class="projects__title">Наши проекты</h2>
+					<ul class="projects__grid">
+						<li class="projects__item-1">
+							<picture
+								><source
+									media="(max-width:767px)"
+									srcset="images/projects-320-1.png" />
+								<source
+									media="(max-width:1400px)"
+									srcset="images/projects-1024-1.png" />
+								<img src="images/projects-1920-1.png" alt="Picture" /></picture
+							><span class="projects__item-span-top">#пейзаж</span>
+							<p class="projects__item-text projects__item-text-1">
+								Синтетически, смешаны с&nbsp;не&nbsp;уникальными данными
+								до&nbsp;степени...
+							</p>
+							<span class="projects__item-span-bottom"
+								>16&nbsp;июня
+								<svg style="width: 14px; height: 14px">
+									<use xlink:href="images/sprite.svg#projects"></use></svg
+							></span>
+						</li>
+						<li class="projects__item-2">
+							<picture
+								><source
+									media="(max-width:767px)"
+									srcset="images/projects-320-2.png" />
+								<source
+									media="(max-width: 1400px)"
+									srcset="images/projects-1024-2.png" />
+								<img src="images/projects-1920-2.png" alt="Picture" /></picture
+							><span class="projects__item-span-top">#портрет</span>
+							<p class="projects__item-text projects__item-text-2">
+								В&nbsp;своём стремлении улучшить опыт мы упускаем, что явные...
+							</p>
+							<span class="projects__item-span-bottom"
+								>28&nbsp;мая
+								<svg style="width: 14px; height: 14px">
+									<use xlink:href="images/sprite.svg#projects"></use></svg
+							></span>
+						</li>
+						<li class="projects__item-3">
+							<picture
+								><source
+									media="(max-width:767px)"
+									srcset="images/projects-320-3.png" />
+								<source
+									media="(max-width:1023px)"
+									srcset="images/projects-768-3.png" />
+								<source
+									media="(max-width: 1400px)"
+									srcset="images/projects-1024-3.png" />
+								<img src="images/projects-1920-3.png" alt="Picture" /></picture
+							><span class="projects__item-span-top">#предмет</span>
+							<p class="projects__item-text projects__item-text-3">
+								Равным образом, высокое качество позиционных высокотехнологичная
+								концепция общественного уклада
+							</p>
+							<span class="projects__item-span-bottom"
+								>14&nbsp;мая
+								<svg style="width: 14px; height: 14px">
+									<use xlink:href="images/sprite.svg#projects"></use></svg
+							></span>
+						</li>
+						<li class="projects__item-4">
+							<picture
+								><source
+									media="(max-width:767px)"
+									srcset="images/projects-320-4.png" />
+								<source
+									media="(max-width:1023px)"
+									srcset="images/projects-768-4.png" />
+								<source
+									media="(max-width: 1400px)"
+									srcset="images/projects-1024-4.png" />
+								<img src="images/projects-1920-4.png" alt="Picture" /></picture
+							><span class="projects__item-span-top">#fuji</span>
+							<div class="projects__item-content">
+								<span class="projects__item-content-span"
+									>9&nbsp;апреля
+									<svg style="width: 14px; height: 14px">
+										<use xlink:href="images/sprite.svg#projects"></use></svg
+								></span>
+								<h3 class="projects__item-content-title">
+									Cемантический разбор
+								</h3>
+								<p class="projects__item-content-text">
+									В&nbsp;рамках спецификации современных стандартов,
+									интерактивные прототипы
+								</p>
+							</div>
+							<button class="projects__item-btn">О&nbsp;проекте</button>
+						</li>
+						<li class="projects__item-5">
+							<picture
+								><source
+									media="(max-width:767px)"
+									srcset="images/projects-320-5.png" />
+								<source
+									media="(max-width:1023px)"
+									srcset="images/projects-768-5.png" />
+								<source
+									media="(max-width: 1400px)"
+									srcset="images/projects-1024-5.png" />
+								<img src="images/projects-1920-5.png" alt="Picture" /></picture
+							><span class="projects__item-span-top">#проектзабвение</span>
+							<div class="projects__item-content">
+								<span class="projects__item-content-span"
+									>20&nbsp;марта
+									<svg style="width: 14px; height: 14px">
+										<use xlink:href="images/sprite.svg#projects"></use></svg
+								></span>
+								<h3 class="projects__item-content-title">Забвение</h3>
+								<p class="projects__item-content-text">
+									Играет важную роль в&nbsp;формировании глубокомысленных
+									рассуждений
+								</p>
+							</div>
+							<button class="projects__item-btn">О&nbsp;проекте</button>
+						</li>
+						<li class="projects__item-6">
+							<picture
+								><source
+									media="(max-width:767px)"
+									srcset="images/projects-320-6.png" />
+								<source
+									media="(max-width: 1400px)"
+									srcset="images/projects-1024-6.png" />
+								<img src="images/projects-1920-6.png" alt="Picture" /></picture
+							><span class="projects__item-span-top">#ретушь</span>
+							<p class="projects__item-text projects__item-text-6">
+								Как принято считать, многие известные личности
+								и&nbsp;по&nbsp;сей день остаются уделом либералов...
+							</p>
+							<span class="projects__item-span-bottom"
+								>9&nbsp;марта
+								<svg style="width: 14px; height: 14px">
+									<use xlink:href="images/sprite.svg#projects"></use></svg
+							></span>
+						</li>
+						<li class="projects__item-7">
+							<picture
+								><source
+									media="(max-width:767px)"
+									srcset="images/projects-320-7.png" />
+								<source
+									media="(max-width: 1400px)"
+									srcset="images/projects-1024-7.png" />
+								<img src="images/projects-1920-7.png" alt="Picture" /></picture
+							><span class="projects__item-span-top">#портрет</span>
+							<p class="projects__item-text projects__item-text">
+								С&nbsp;учётом сложившейся международной обстановки, новая модель
+								организационной...
+							</p>
+							<span class="projects__item-span-bottom"
+								>1&nbsp;марта
+								<svg style="width: 14px; height: 14px">
+									<use xlink:href="images/sprite.svg#projects"></use></svg
+							></span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container container">
+					<h2 class="contacts__title">Контакты</h2>
+					<div class="contacts__grid">
+						<div id="map" class="contacts__grid-left contacts__map">
+							<div class="contacts__grid-left-blok">
+								<button
+									id="mapContentClose"
+									class="contacts__map-content-close"
+								>
+									<svg style="width: 20px; height: 20px">
+										<use xlink:href="images/sprite.svg#х"></use>
+									</svg>
+								</button>
+								<div class="contacts__map-content">
+									<h3 class="contacts__map-content-title">
+										Студия &laquo;High pass&raquo;
+									</h3>
+									<p class="contacts__map-content-text">
+										107045, Москва, Даев переулок, дом&nbsp;41, бизнес-центр
+										&laquo;Даев Плаза&raquo;, этаж&nbsp;8, офис &#8470;&nbsp;82
+									</p>
+									<a class="contacts__map-content-link" href="#"
+										>+7&nbsp;495 424-23-532
+										<svg>
+											<use xlink:href="images/sprite.svg#mdi_call"></use></svg
+									></a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__grid-right">
+							<h3 class="contacts__grid-right-title">Оставить заявку</h3>
+							<p class="contacts__grid-right-text">
+								Оставьте ваши данные, указав в&nbsp;графе
+								&laquo;Комментарий&raquo; желаемые время и&nbsp;дату съёмки или
+								другого мероприятия
+							</p>
+							<form class="contacts__form" action="#">
+								<input
+									class="contacts__form-input"
+									type="text"
+									placeholder="Имя"
+								/>
+								<input
+									class="contacts__form-input"
+									type="text"
+									placeholder="Email"
+								/>
+								<textarea
+									class="contacts__form-textarea"
+									name=""
+									id=""
+									cols="30"
+									rows="10"
+									placeholder="Комментарий"
+								></textarea>
+								<button class="contacts__form-btn">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__grid">
+					<div class="footer__left">
+						<svg><use xlink:href="images/sprite.svg#Logo"></use></svg>
+						<span class="footer__left-span"
+							>Фотостудия High pass<sup class="reg">&reg;</sup>
+							2018&ndash;2020</span
+						>
+					</div>
+					<div class="footer__center">
+						<p class="footer__center-text">
+							Которая из&nbsp;моих фотографий самая любимая? Та, которую
+							я&nbsp;собираюсь снять завтра. &copy;&nbsp;Имоджен Каннингем
+						</p>
+					</div>
+					<div class="footer__right">
+						<span class="footer__right-span">Больше интересного:</span>
+						<div class="footer__right-social">
+							<svg style="width: 30px; height: 30px">
+								<use xlink:href="images/sprite.svg#social"></use>
+							</svg>
+							<svg style="width: 30px; height: 30px">
+								<use xlink:href="images/sprite.svg#vk"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+		<script src="vendor.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
